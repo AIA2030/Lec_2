@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sign_login/login_page.dart';
-import 'package:sign_login/sign_up.dart';
+import 'package:sign_login/splash_screen/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Musician',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         scaffoldBackgroundColor: Color(0xff181c27),
@@ -41,22 +40,8 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
 
     return Scaffold(
-      // appBar: AppBar(
-      //
-      //   leading: IconButton (icon: Icon(Icons.menu), onPressed: () {  },),
-      //
-      //   title: Center( child: Text(widget.title, style: TextStyle(color: Colors.white, fontSize: 30.0, fontWeight: FontWeight.bold)),),
-      //
-      //
-      //   actions: [
-      //     IconButton(icon: Icon(Icons.account_circle_rounded),onPressed: () {  },),
-      //   ],
-      //
-      //   backgroundColor: Colors.blue,
-      //
-      // ),
 
-      body: LogIn (),
+      body:SplashScreen()
     );
   }
 }
